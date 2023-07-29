@@ -98,6 +98,7 @@ print("Average ",total/len(a))
 print("Max value ",max)
 #Max value  765
 
+
 #For dictionary in forloop
 d={
     "saman":345,
@@ -128,3 +129,39 @@ for name,height in d.items():
 # nimal 879
 # <class 'tuple'>
 # sudath 456
+
+#for Set iteration
+
+s={
+    "saman",
+    "kasun",
+    "nimal",
+    "sudath"
+}
+for name in s:
+    print(name)
+# nimal
+# sudath
+# saman
+# kasun
+
+
+d={
+    "saman":345,
+    "kasun":657,
+    "nimal":879,
+    "sudath":456
+}
+for i in enumerate(d.items()):
+    print(i)
+# (0, ('saman', 345))
+# (1, ('kasun', 657))
+# (2, ('nimal', 879))
+# (3, ('sudath', 456))
+
+for index, name in enumerate(d.items()):
+    print(index,name)
+# 0 ('saman', 345)
+# 1 ('kasun', 657)
+# 2 ('nimal', 879)
+# 3 ('sudath', 456)
