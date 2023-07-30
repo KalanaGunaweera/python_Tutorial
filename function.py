@@ -58,3 +58,33 @@ def results(*marks):
 results(67,54,76)
 # <class 'tuple'>
 # 197
+
+#Keyword arguments-kwargs
+
+def kwargs(**params):
+    print(type(params))
+    print(params)
+kwargs(name="kalana", age=30,address="matara")
+kwargs(name="sudath", address="ampara")
+# <class 'dict'>
+# {'name': 'kalana', 'age': 30, 'address': 'matara'}
+# <class 'dict'>
+# {'name': 'sudath', 'address': 'ampara'}
+
+
+def kwargs(**params):
+    if 'name' not in params:
+        print("Error")
+    else:
+        print("Hello",params['name'])
+ 
+kwargs(name="kalana", age=30,address="matara")
+kwargs( address="ampara")
+# Hello kalana
+# Error
+
+#When I use packed and keyword in boths, packed argument must in the first
+def args(*values,**params):
+    print(values,params)
+args(67,54,name="kalana", age=30,address="matara")
+# (67, 54) {'name': 'kalana', 'age': 30, 'address': 'matara'}
