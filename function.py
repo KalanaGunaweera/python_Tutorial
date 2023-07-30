@@ -47,3 +47,14 @@ get_results(67,"Maths")
 # B
 # My subject is  Maths
 # B
+
+#Packed Arguments
+def results(*marks):
+    print(type(marks))
+    total=0
+    for i in marks:
+        total+=i
+    print(total)
+results(67,54,76)
+# <class 'tuple'>
+# 197
