@@ -88,3 +88,18 @@ def args(*values,**params):
     print(values,params)
 args(67,54,name="kalana", age=30,address="matara")
 # (67, 54) {'name': 'kalana', 'age': 30, 'address': 'matara'}
+
+
+#convert dictionary into named arguments
+def args(name,age):
+    print(name,age)
+    print(name)
+    print(age)
+dic={
+    'name':'kalana',
+    'age':76
+}
+args(**dic)
+# kalana 76
+# kalana
+# 76
