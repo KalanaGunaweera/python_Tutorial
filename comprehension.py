@@ -73,4 +73,27 @@ for i,value in enumerate(x):
 # 0 12
 # 1 54
 # 2 65
-    
+
+#example..conditions with enumerate function
+x=[23,43,65,87,46,87,90]
+b=[is_odd(value) for i,value in enumerate(x) if i%2==0]  #check the index of the x is even or not
+print(x)
+print(b)
+# [23, 43, 65, 87, 46, 87, 90]
+# ['odd', 'odd', 'even', 'even']
+
+#we can return dictionary also using above method
+
+def is_odd_dictionary(number):
+    return {number:"even"}if number%2==0 else {number:"odd"}
+
+x=[23,43,65,87,46,87,90]
+d=[is_odd_dictionary(value) for i,value in enumerate(x) if i%2==0]
+print(d)
+# [{23: 'odd'}, {65: 'odd'}, {46: 'even'}, {90: 'even'}]
+
+#or
+
+d=[{value:is_odd(value)} for i, value in enumerate(x) if i%2==0]
+print(d)
+# [{23: 'odd'}, {65: 'odd'}, {46: 'even'}, {90: 'even'}]
