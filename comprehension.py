@@ -58,3 +58,19 @@ print(a)
 print(c)
 # [23, 43, 54, 76, 90]
 # ['odd', 'odd', 'even', 'even', 'even']
+
+
+#example using enemarate function
+x=[12,54,65]
+for i in enumerate(x):
+    print(i)
+# output
+# (0, 12)
+# (1, 54)
+# (2, 65)
+for i,value in enumerate(x):
+    print(i ,value)
+# 0 12
+# 1 54
+# 2 65
+    
