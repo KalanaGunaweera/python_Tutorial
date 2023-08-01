@@ -97,3 +97,9 @@ print(d)
 d=[{value:is_odd(value)} for i, value in enumerate(x) if i%2==0]
 print(d)
 # [{23: 'odd'}, {65: 'odd'}, {46: 'even'}, {90: 'even'}]
+
+
+#Return dictionary
+d={value:is_odd(value) for i, value in enumerate(x) if i%2==0}
+print(d)
+# {23: 'odd', 65: 'odd', 46: 'even', 90: 'even'}
