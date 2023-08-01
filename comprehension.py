@@ -108,3 +108,14 @@ print(d)
 d={value for i, value in enumerate(x) if i%2==0}
 print(d)
 # {65, 90, 46, 23}
+
+#Return tuple
+d=(value for i, value in enumerate(x) if i%2==0)
+print(d)
+# output....>><generator object <genexpr> at 0x0000023BA5101380>
+for i in d:
+    print(i)
+# 23
+# 65
+# 46
+# 90
