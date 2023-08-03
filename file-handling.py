@@ -56,3 +56,10 @@ msg ='\n'.join(x)
 file.write(msg)
 file.close()
 
+#context manager>>>>use to auto close the file 
+with open("text.txt",'a') as file:
+    x=[str(i)*2 for i in range(100,200)]
+    msg ='\n'.join(x)
+    file.write(msg)
+
+
